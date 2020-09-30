@@ -4,7 +4,7 @@ html {
 }
 
 .card-body {
- background-image: linear-gradient(to top, #FCF5D6 0%, #6D8C93 100%, #e6dee9 100%);
+ background-image: linear-gradient(to top, #FCF5D6 0%, #6D8C93 100%);
   border: 3px;
   font-family: Arial, Helvetica, sans-serif;
 }
