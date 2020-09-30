@@ -37,9 +37,9 @@ p {
 }
 
 img {
-  padding: 0.25rem 0;
+  padding: 30px;
   max-width: 100%;
-  display: block;
+  display: inline;
 }
 
 a {
@@ -55,7 +55,6 @@ a:hover {
   background: black;
   color: #fff;
 
-  /* Example here: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   font-size: 1.2rem;
