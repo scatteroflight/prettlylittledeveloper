@@ -40,12 +40,10 @@ p {
 }
 
 img {
-  padding: 30px;
   max-width: 100%;
   margin: 0;
   text-align: center;
   border-radius: 50%;
-margin: 0;
 border: dotted;
 border-color: lightpink;
 }
@@ -60,12 +58,13 @@ a:hover {
 }
 
 .navigation {
-  background: black;
+  background: #F4B0C1;
   color: #fff;
 
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   font-size: 1.2rem;
+  text-align: center;
 
   padding: 1rem;
 }
