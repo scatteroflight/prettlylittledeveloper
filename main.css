@@ -38,6 +38,7 @@ p {
 img {
   margin: 0 auto;
   display: block;
+  text-align: center;
   border-radius: 50%;
 border: dotted;
 border-color: lightpink;
