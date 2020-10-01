@@ -88,7 +88,9 @@ a:hover {
 
 .navigation a:hover {
   border: 0;
-  color: #f54996;
+  color: #AFCFCE;
+  text-decoration: underline;
+  
 }
 
 
