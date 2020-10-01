@@ -80,6 +80,7 @@ a:hover {
 .navigation ul li {
   display: inline;
   padding-right: 0.5rem;
+  
 }
 
 .navigation a {
@@ -88,8 +89,7 @@ a:hover {
 
 .navigation a:hover {
   border: 0;
-  color: #AFCFCE;
-  text-decoration: underline;
+  color: #FEF4C9;
   
 }
 
