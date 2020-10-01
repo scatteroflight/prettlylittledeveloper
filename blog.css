@@ -1,0 +1,19 @@
+
+/*
+  IDs
+*/
+#active a {
+  border-bottom: 2px solid #f54996;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
