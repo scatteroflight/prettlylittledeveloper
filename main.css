@@ -48,7 +48,7 @@ img {
   text-align: center;
   border-radius: 50%;
 border: dotted;
-border-color: lightpink;
+border-color: #A9EDDE;
 }
 
 a {
@@ -89,7 +89,7 @@ a:hover {
 
 .navigation a:hover {
   border: 0;
-  color: #FEF4C9;
+  color: #A9EDDE;
   
 }
 
