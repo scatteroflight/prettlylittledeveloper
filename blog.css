@@ -1,4 +1,4 @@
-html {
+  html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -48,27 +48,20 @@ img {
   text-align: center;
   border-radius: 50%;
 border: dotted;
-border-color: lightpink;
-}
-
-a {
-  color: #f54996;
-  text-decoration: none;
+border-color: #A9EDDE;
 }
 
 a:hover {
-  border-bottom: 2px solid #f54996;
+  border-bottom: 2px solid;
+  color: rgb(250, 135, 135);
+  text-decoration: underline;
 }
 
 .navigation {
-  background: black;
-  color: #fff;
-
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
+  background: #000000;
+  
   font-size: 1.2rem;
   text-align: center;
-
   padding: 1rem;
 }
 
@@ -84,26 +77,24 @@ a:hover {
 }
 
 .navigation a {
-  color: #fff;
+  color: white;
 }
 
 .navigation a:hover {
-  border: 0;
-  color: #FEF4C9;
-  
+  color: rgb(250, 135, 135);
+  text-decoration: white;
 }
 
 
+
 .color-secondary {
-  color: #f54996;
+  color: rgb(250, 135, 135);
 }
 
 /*
   IDs
 */
-#active a {
-  border-bottom: 2px solid #f54996;
-}
+
 
 
 * {
