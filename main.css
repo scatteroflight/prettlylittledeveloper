@@ -45,10 +45,8 @@ p {
 img {
   margin: 0 auto;
   display: block;
+  padding: 20px;
   text-align: center;
-  border-radius: 50%;
-border: dotted;
-border-color: #A9EDDE;
 }
 
 a:hover {
