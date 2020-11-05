@@ -1,0 +1,111 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+
+
+  
+}
+
+.card-body {
+background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  border: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+text-align: center;
+  margin: 0.75rem 1rem;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+ color: #6d6064;
+}
+
+h2 {
+  font-size: 1.6rem;
+text-align: center;
+  margin: 0.5rem 1rem;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+  color: #6d6064;
+}
+
+h3 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+  margin: 0.5rem 1rem;
+  color: #6d6064;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  text-align: center;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+  margin: 0.5rem 1rem;
+    color: #6d6064;
+
+}
+
+#p1 {
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.navigation {
+  background: #f2e7ea;
+  border-bottom: 2px solid #d6c2c8;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  padding-right: 0.5rem;
+  
+}
+
+.navigation a {
+  color: #d6c2c8;
+}
+
+.navigation a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
