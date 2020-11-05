@@ -1,10 +1,14 @@
-  html {
+html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+
+
+
+  
 }
 
 .card-body {
- background-image: linear-gradient(-20deg, #FEF4C9 0%, #AFCFCE 100%);
+background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   border: 3px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,22 +22,37 @@ h1 {
   font-size: 2rem;
 text-align: center;
   margin: 0.75rem 1rem;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+ color: #6d6064;
 }
 
 h2 {
   font-size: 1.6rem;
 text-align: center;
   margin: 0.5rem 1rem;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+  color: #6d6064;
 }
 
 h3 {
   font-size: 1.4rem;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+  margin: 0.5rem 1rem;
+  color: #6d6064;
 }
 
 p {
   font-size: 1rem;
   padding: 0.25rem 0;
   text-align: center;
+  border-bottom: 2px solid #d6c2c8;
+  padding: 5px;
+  margin: 0.5rem 1rem;
+    color: #6d6064;
+
 }
 
 #p1 {
@@ -45,21 +64,13 @@ p {
 img {
   margin: 0 auto;
   display: block;
+  padding: 20px;
   text-align: center;
-  border-radius: 50%;
-border: dotted;
-border-color: #A9EDDE;
-}
-
-a:hover {
-  border-bottom: 2px solid;
-  color: rgb(250, 135, 135);
-  text-decoration: underline;
 }
 
 .navigation {
-  background: #000000;
-  
+  background: #f2e7ea;
+  border-bottom: 2px solid #d6c2c8;
   font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
@@ -77,23 +88,14 @@ a:hover {
 }
 
 .navigation a {
-  color: white;
+  color: #d6c2c8;
 }
 
 .navigation a:hover {
-  color: rgb(250, 135, 135);
-  text-decoration: white;
+  color: black;
+  text-decoration: underline;
 }
 
-
-
-.color-secondary {
-  color: rgb(250, 135, 135);
-}
-
-/*
-  IDs
-*/
 
 
 
