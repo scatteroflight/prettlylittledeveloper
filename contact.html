@@ -43,8 +43,95 @@
         </li>
       </ul>
     </nav>
-          <img src="https://user-images.githubusercontent.com/62908596/95764766-cd19ef00-0ca8-11eb-841d-3c1f60114364.jpg" alt="PLD" height="200 px" width="200 px" />
-       <div>
+         
+    <main>
+      <h1 class="contact-page-title">
+        <span style="font-size: 1.5rem;">
+       Get in touch with me here!
+          </span>
+      </h1>
+      <div class="contact-container">
+        <div class="send-msg">
+          <p class="send-msg-text">Send us a message!</p>
+          <form>
+            <input
+              class="contact-name"
+              id="name"
+              type="text"
+              placeholder="Name"
+              value=""
+              required
+            />
+            <input
+              class="contact-email"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+            <input
+              class="contact-msg"
+              type="text"
+              placeholder="Message"
+              required
+            />
+
+            <input type="checkbox" class="form-check-input" id="checkbox1" />
+            <label
+              class="form-check-label"
+              for="checkbox1"
+              style="display: flex; font-size: 0.8rem; justify-content: center;"
+            >
+              Agree to Terms & Conditions
+            </label>
+
+            <!-- Modal -->
+
+            <!-- Trigger/Open The Modal -->
+            <button class="submit-btn" id="myBtn">
+              Submit
+            </button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <p>Thank you!</p>
+                </div>
+                <div class="modal-body">
+                  <p>Thank you for your message!</p>
+                  <p>We I get back to you shortly.</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Have a great day 😄 </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-options">
+          <div class="phone">
+            <p>
+              <b>PHONE</b> +448787xxxx<br />
+              Weekdays 10:00 - 20:00 GMT <br />
+              Saturdays 10:00 - 17:00 GMT <br />
+              Sundays 12:00 - 16:00 GMT
+            </p>
+          </div>
+          <div class="mail">
+            <p>
+              <b>LOCATION </b> <br />
+              ArtRealm<br />
+              Imaginary Street, London<br />
+              A1 7BC<br />
+              United Kingdom
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
   </body>
 </html>
