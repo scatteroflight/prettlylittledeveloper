@@ -1,171 +1,134 @@
-<style>
-    html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+<?php
 
+$message_sent = false;
+if(isset($_POST['email']) && $_POST['email] !=''){
+    
+    if(filter_var($_POST['email']), FILTER_VALIDATE_EMAIL) ){
+    
+    // submit the form
+    $userName = $_POST('name');
+    $userEmail = $_POST('email');
+    $messageSubject = $_POST('subject');
+    $message = $_POST('message');
 
+    $to = "jclwhitfield@gmail.com";
+    $body = "";
+    
+    $body .= "From: ".$userName. "\r\n";
+    $body .= "Email: ".$userEmail. "\r\n";
+    $body .= "Message: ".$message. "\r\n";
 
-  
+    mail($to,$messageSubject,$body);
+    
+   $message_sent = true;
 }
+    
+?>
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <title>Home Jen's Portfolio</title>
+   <link rel="stylesheet" href="contact.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.card-body {
-background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-  border: 3px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  </head>
+   <body>
+       <?php
+           if($message_sent);                        
+         ?>
 
-header {
-  padding: 1.5rem 0;
-  margin: 0 auto;
-}
+<h3> Thanks, I will be in touch soon 🙂</h3>
 
-h1 {
-  font-size: 2rem;
-text-align: center;
-  margin: 0.75rem 1rem;
-  padding: 5px;
- color: #6d6064;
-}
+<?php
+  else;                               
+  ?>
+                                    
+   <body>
+<div class="container">
+       <div class="card card-body">
+    <nav class="navigation">
+      <ul>
+        <li id="active">
+          <a href="index.html" style="text-decoration: none;">
+            Home
+          </a>
+        </li>
+        <li id="active">
+          <a href="updates.html" style="text-decoration: none;">
+           Updates
+          </a>
+        </li>
+         <li id="active">
+          <a href="socialmedia.html" style="text-decoration: none;">
+           Social Media
+          </a>
+        </li>
+         <li id="active">
+          <a href="portfolio.html" style="text-decoration: none;">
+            Portfolio
+          </a>
+        <li id="active">
+          <a href="contact.html" style="text-decoration: none;">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+         
+    <main>
+    <br />
+    <h1>Send me a message 👩‍💻</h1>
+    <br />
+    <br />
+         <div class="container">
+        <form action="webform.php" method="POST" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">Send Message!</button>
+            </div>
+        </form>
+      </main>
+      
+      <footer>
+      <div>
+          <p>
+              Alternatively get in touch with me via 
+              <br />
+        <a target="_blank" href="https://www.instagram.com/prettylittledeveloper/"><i class="fa fa-instagram" style="font-size:30px;color:#C53B91"></i></a>
+        <a target="blank" href="https://twitter.com/PLD_Jen"><i class="fa fa-twitter-square" style="font-size:30px; color:#3291DA"></i></a>
+        <a target="blank" href="https://www.linkedin.com/in/jen-whitfield-2018/"><i class="fa fa-linkedin-square" style="font-size:30px; color:#1666C2"></i></a>    
+    </p>
+      </div>
+      </footer>
+   <?php
+     endif;
+     ?>
 
+  </body>
+  <script>
 
-p {
-  font-size: 1rem;
-  padding: 0.25rem 0;
-  text-align: center;
-  border-bottom: 2px solid #d6c2c8;
-  padding: 5px;
-  margin: 0.5rem 1rem;
-    color: #6d6064;
-
-}
-
-
-button {
-    background-color: #d3bdec;
-    border: #d3bdec;
-}
-
-.navigation {
-  background: #f2e7ea;
-  border-bottom: 2px solid #d6c2c8;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem;
-}
-
-.navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
-.navigation ul li {
-  display: inline;
-  padding-right: 0.5rem;
-  
-}
-
-.navigation a {
-  color: #d6c2c8;
-}
-
-.navigation a:hover {
-  color: black;
-  text-decoration: underline;
-}
-
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
-/* form */
-
-.btn{
-    background: 0 0 #d1c8e6;
-    border:1px solid #aaa;
-    border-radius:3px;
-    color:var(--font-color);
-    font-size:1em;
-    padding:10 50px;
-    text-transform:uppercase;
-}
-.btn:hover{
-    border-color:var(--font-hover-color);
-    color:var(--font-hover-color);
-
-/* PHONE */
-
-@media only screen and (max-width: 500px) {
-  .website-name {
-    margin-left: 2rem;
-  }
-
-  .navbar-links-icons {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .marker {
-    margin-top: -0.33rem;
-    margin-left: -0.25rem;
-    height: 1rem;
-    width: 1rem;
-    background: url(../img/map-marker-alt-solid.svg) 49% / 60% no-repeat;
-  }
-
-  .contact-page-title {
-    padding-top: 7rem;
-  }
-
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-  }
-
-  .send-msg {
-    padding: 0;
-    padding-top: 1rem;
-  }
-  .contact-options {
-    font-size: 0.7rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
-</style>
+  </script>
+</html>
