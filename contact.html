@@ -1,3 +1,8 @@
+<?php
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +16,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
    <body>
 <div class="container">
@@ -45,93 +51,48 @@
     </nav>
          
     <main>
-      <h1 class="contact-page-title">
-        <span style="font-size: 1.5rem;">
-       Get in touch with me here!
-          </span>
-      </h1>
-      <div class="contact-container">
-        <div class="send-msg">
-          <p class="send-msg-text">Send us a message!</p>
-          <form>
-            <input
-              class="contact-name"
-              id="name"
-              type="text"
-              placeholder="Name"
-              value=""
-              required
-            />
-            <input
-              class="contact-email"
-              type="email"
-              placeholder="Email address"
-              required
-            />
-            <input
-              class="contact-msg"
-              type="text"
-              placeholder="Message"
-              required
-            />
-
-            <input type="checkbox" class="form-check-input" id="checkbox1" />
-            <label
-              class="form-check-label"
-              for="checkbox1"
-              style="display: flex; font-size: 0.8rem; justify-content: center;"
-            >
-              Agree to Terms & Conditions
-            </label>
-
-            <!-- Modal -->
-
-            <!-- Trigger/Open The Modal -->
-            <button class="submit-btn" id="myBtn">
-              Submit
-            </button>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <span class="close">&times;</span>
-                  <p>Thank you!</p>
-                </div>
-                <div class="modal-body">
-                  <p>Thank you for your message!</p>
-                  <p>We I get back to you shortly.</p>
-                </div>
-                <div class="modal-footer">
-                  <p>Have a great day 😄 </p>
-                </div>
-              </div>
+    <br />
+    <h1>Send me a message 👩‍💻</h1>
+    <br />
+    <br />
+         <div class="container">
+        <form action="webform.php" method="POST" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
             </div>
-          </form>
-        </div>
-
-        <div class="contact-options">
-          <div class="phone">
-            <p>
-              <b>PHONE</b> +448787xxxx<br />
-              Weekdays 10:00 - 20:00 GMT <br />
-              Saturdays 10:00 - 17:00 GMT <br />
-              Sundays 12:00 - 16:00 GMT
-            </p>
-          </div>
-          <div class="mail">
-            <p>
-              <b>LOCATION </b> <br />
-              ArtRealm<br />
-              Imaginary Street, London<br />
-              A1 7BC<br />
-              United Kingdom
-            </p>
-          </div>
-        </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">Send Message!</button>
+            </div>
+        </form>
+      </main>
+      
+      <footer>
+      <div>
+          <p>
+              Alternatively get in touch with me via 
+              <br />
+        <a target="_blank" href="https://www.instagram.com/prettylittledeveloper/"><i class="fa fa-instagram" style="font-size:30px;color:#C53B91"></i></a>
+        <a target="blank" href="https://twitter.com/PLD_Jen"><i class="fa fa-twitter-square" style="font-size:30px; color:#3291DA"></i></a>
+        <a target="blank" href="https://www.linkedin.com/in/jen-whitfield-2018/"><i class="fa fa-linkedin-square" style="font-size:30px; color:#1666C2"></i></a>    
+    </p>
       </div>
-    </main>
+      </footer>
 
   </body>
+  <script>
+
+  </script>
 </html>
